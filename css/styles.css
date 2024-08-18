@@ -1,0 +1,710 @@
+.homeContainer {
+   max-width: 1200px;
+   margin: auto;
+}
+
+.bgHeader {
+   background-image: url(/saas-project-assets/backgrounds/background-top.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 1px;
+   height: 820px;
+}
+
+.navbar {
+   display: flex;
+   margin-top: 0;
+   padding: 5px;
+   width: 1200px;
+   position: fixed;
+   z-index: 500;
+   justify-content: space-between;
+   align-items: center;
+   transition: ease-in-out 0.3s;
+}
+
+.navbar.sticky {
+   background-color: var(--white);
+   box-shadow: 0px 0px 20px rgb(42, 43, 51, 0.2);
+   border-radius: 3px;
+}
+
+.navbar-toggler {
+   position: absolute;
+   right: 20px;
+   top: 30px;
+   outline: none;
+   background-color: transparent;
+   border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+   color: var(--grey);
+   font-size: 22px;
+   cursor: pointer;
+}
+
+[aria-controls="navbarDropdown"] {
+   display: none;
+}
+
+.navLogo img { width: 200px; }
+
+.navRight {
+   display: flex;
+   justify-content: space-between;
+}
+
+.navLinks {
+   display: flex;
+   margin-right: 35px;
+   justify-content: space-between;
+   width: 360px;
+   font-size: 18px;
+}
+
+.highlight { color: var(--blue); }
+
+.topDisplay { 
+   display: flex;
+   margin-top: 100px;
+   justify-content: space-between;
+}
+
+.empower {
+   width: 400px;
+   margin-top: 120px;
+}
+
+.empower h2 {
+   font-size: 48px;
+   color: var(--black);
+   font-weight: 400;
+   margin-bottom: 12px;
+   text-align: left;
+}
+
+.empower p { margin-bottom: 26px; }
+
+.blueButton i { margin-right: 8px; }
+
+.learn {
+   margin-right: 30px;
+   width: 160px;
+}
+
+.empower span i { margin-left: 10px; }
+
+.brands {
+   position: relative;
+   width: 790px;
+   margin-top: 70px;
+}
+
+#google , #google-a {
+   height: 50px;
+   width: 50px;
+}
+
+#google img {
+   height: 45px;
+   width: 45px;
+}
+
+#google-a img {
+   height: 45px;
+   width: 45px;
+}
+
+#google {
+   position: absolute;
+   left: 250px;
+}
+
+#atlassian {
+   position: absolute;
+   right: 300px;
+}
+
+#asana {
+   position: absolute;
+   right: 10px;
+}
+
+#paypal {
+   position: absolute;
+   top: 200px;
+   left: 200px;
+}
+
+#google-a {
+   position: absolute;
+   top: 340px;
+   left: 370px;
+}
+
+#weave {
+   position: absolute;
+   top: 200px;
+   left: 500px;
+}
+
+#calender {
+   position: absolute;
+   top: 375px;
+   right: 40px;
+}
+
+.logoCoaster {
+   border: 1px solid transparent;
+   background-color: var(--white);
+   box-shadow: 1px 1px 7px rgb(146, 150, 150);
+   padding: 8px;
+   border-radius: 50%;
+   height: 80px;
+   width: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.logoCoaster img {
+   height: 60px;
+   width: 60px;
+}
+
+.benefits {
+   text-align: center;
+   margin-top: 150px;
+}
+
+.benefitCards {
+   margin: 50px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.beneCard {
+   border: 1px solid transparent;
+   box-shadow: 1px 5px 20px rgb(212, 216, 216);
+   padding: 40px;
+   border-radius: 5px;
+}
+
+.beneCard:hover {
+   cursor: pointer;
+   transform: scale(1.05);
+   transition: ease-in-out 0.3s;
+}
+
+.beneCard img {
+   height: 70px;
+   width: 70px;
+}
+
+.beneCard h3 {
+   color: var(--black);
+   font-size: 20px;
+}
+
+.premLabel {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 165px;
+}
+
+.beneCard p {
+   line-height: 26px;
+   font-weight: 500;
+   margin-bottom: 18px;
+}
+
+.beneCard a i { margin-left: 10px; }
+
+.frontSection {
+   height: 590px;
+   margin-top: 100px;
+   background-color: #f2f5f7;
+   display: flex;
+}
+
+.bannerLeft {
+   width: 500px;
+   margin-top: 250px;
+   margin-left: 30px;
+}
+
+.bannerLeft .title {
+   text-align: left;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 45px;
+}
+
+.bannerLeft .blueButton i { margin-left: 10px; }
+
+.bannerRight { width: 700px; }
+
+.bannerRight img {
+   margin-top: 150px;
+   height: 440px;
+   width: 700px;
+}
+
+.why {
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.why .title { margin-top: 90px; }
+
+.why .titlePass { line-height: 28px; }
+
+.whyDots {
+   width: 1150px;
+   margin: 10px auto;
+   padding: 0;
+   display: flex;
+   align-items: center;
+}
+
+.whyDot {
+   height: 60px;
+   width: 60px;
+   border-radius: 50px;
+   background-color: #f2f5f7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.speck {
+   height: 8px;
+   width: 8px;
+   border-radius: 50%;
+   background-color: var(--blue);
+}
+
+.line {
+   height: 3px;
+   width: 310px;
+   background-color: #f2f5f7;
+   margin: 0 5px;
+}
+
+.whyTitles {
+   display: flex;
+   padding: 0;
+   color: var(--black);
+   font-size: 22px;
+   font-weight: 500;
+   justify-content: space-between;
+}
+
+.vidBanner {
+   margin: 100px 0;
+   background-image: url(/saas-project-assets/banners/banner_two.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pressPlay {
+   height: 80px;
+   width: 80px;
+   border-radius: 50px;
+   text-align: center;
+   font-size: 26px;
+   border: 1px solid transparent;
+   background-color: var(--white);
+   box-shadow: 1px 1px 7px rgb(146, 150, 150);
+}
+
+.pressPlay:hover {
+   cursor: pointer;
+   background-color: var(--dark-blue);
+   transform: scale(1.02);
+   color: var(--white);
+   transition: ease-in-out 0.3s;
+}
+
+.hubSpot { 
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 100px;
+}
+
+.hubLeft { display: flex; }
+
+.hubDots {
+   height: 420px;
+   width: 250px;
+   object-fit: cover;
+   position: relative;
+   margin-top: 155px;
+}
+
+.hubPhoto {
+   position: absolute;
+   margin-left: 60px;
+   height: 500px;
+   width: 450px;
+}
+
+.hubRight {
+   margin-top: 50px;
+   margin-right: 70px;
+}
+
+.hubRight h4 {
+   color: var(--black);
+   font-size: 26px;
+   font-weight: 500;
+}
+
+.hubName { margin-top: 30px; }
+.hubName * { margin: 5px; }
+.hubName h3 { color: var(--black); }
+
+.bestPass {
+   text-align: center;
+   font-size: 28px;
+   letter-spacing: 3px;
+}
+
+.bestBrands {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 100px;
+}
+
+.bestBrands img { width: 140px; }
+
+.pricing {
+   margin-top: 50px;
+   margin-bottom: 100px;
+   display: flex;
+}
+
+.priceCard {
+   border: 1px solid transparent;
+   padding: 50px;
+   box-shadow: 1px 5px 20px rgb(212, 216, 216);
+   width: 300px;
+}
+
+.cardNumber {
+   display: flex;
+   align-items: center;
+   margin: 20px 0;
+}
+
+.cardNumber h2 {
+   color: var(--black);
+   font-size: 50px;
+   font-weight: 400;
+}
+
+.cardNumber h3 {
+   margin-left: 10px;
+   font-size: 22px;
+   font-weight: 300;
+}
+
+.priceCard p {
+   font-size: 18px;
+   font-weight: 400;
+   margin-bottom: 60px;
+   line-height: 30px;
+}
+
+.priceCard .line {
+   background-color: #d7dbde;
+   margin-bottom: 30px;
+}
+
+.priceCard .blueButton h3 { font-size: 14px; }
+.priceCard .blueButton i { margin-left: 8px; }
+
+.priceCard h6 {
+   margin: 7px;
+   font-weight: 400;
+}
+
+.priceFeatures {
+   display: grid;
+   grid-template-columns: repeat(2, 300px);
+   grid-gap: 70px;
+   margin-left: 70px;
+}
+
+.priceCell img {
+   height: 75px;
+   width: 75px;
+}
+
+.priceCell h3 {
+   color: var(--black);
+   font-size: 22px;
+}
+
+.priceLabel { width: 230px; }
+
+.hireUs {
+   background-image: url(/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
+   background-color: var(--background-blue);
+   padding: 30px;
+   margin-bottom: 80px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.hireDes {
+   height: 550px;
+   color: var(--white);
+}
+
+.hireDes h2 {
+   font-weight: 500;
+   font-size: 30px;
+   margin-top: 80px;
+   margin-bottom: 14px;
+}
+
+.hireDes p { 
+   color: var(--grey); 
+   line-height: 24px;
+   width: 165px;
+}
+
+.hireLine {
+   border: 1px solid var(--white);
+   width: 200px;
+   margin: 30px 0;
+}
+
+.comment {
+   font-weight: 400;
+   line-height: 26px;
+   font-style: italic;
+   margin-bottom: 40px;
+}
+
+.headDesc {
+   line-height: 28px;
+}
+
+.headName {
+   font-weight: 500;
+   font-size: 20px;
+}
+
+.profiles {
+   display: flex;
+   margin-top: 30px;
+   width: 200px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.profiles img {
+   height: 45px;
+   width: 45px;
+   border-radius: 50%;
+   opacity: 70%;
+}
+
+#selectMan {
+   height: 60px;
+   width: 60px;
+   opacity: 100%;
+}
+
+.hireApp {
+   width: 400px;
+   background-color: var(--white);
+   color: var(--black);
+   border-radius: 5px;
+   padding: 20px;
+}
+
+.hireApp h3 { margin-top: 0; }
+
+.appForm {
+   height: 300px;
+   display: grid;
+   grid-template-columns: repeat(2 , 188px);
+   grid-gap: 14px;
+}
+
+.type , .pick {
+   height: 35px;
+   border: 1px solid #d7dbde;
+   font-weight: 600;
+   color: var(--black);
+   border-radius: 5px;
+   padding: 5px;
+}
+
+.pick {
+   width: 188px;
+   color: var(--black);
+}
+
+#tellUs {
+   height: 100px;
+   width: 368px;
+   font-family: "Roboto", sans-serif;
+   border: 1px solid #d7dbde;
+   border-radius: 5px;
+   padding: 10px;
+   font-size: 15px;
+   resize: none;
+}
+
+ #subscribe {
+   height: 38px;
+   width: 38px;
+}
+
+#subscribe:hover {
+   transform: scale(1.02);
+   cursor: pointer;
+}
+
+.subLab {
+   grid-row: 5 /span 1;
+   width: 400px;
+   display: flex;
+   align-items: center;
+}
+
+.subLab label {
+   margin-left: 10px;
+   font-size: 14px;
+}
+
+.appBut {
+   width: 300px;
+   margin-top: 20px;
+   border-radius: 8px;
+   grid-row: 6 /span 1;
+   margin-left: 50px;
+}
+
+.appBut h3 {
+   margin: 0;
+   font-size: 20px;
+}
+
+.footLinks {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 60px;
+}
+
+.footCol { line-height: 30px; }
+
+.footCol h3 { 
+   color: var(--black); 
+   margin: 5px 0;
+}
+
+.footCol img { height: 50px; }
+
+.footCol i { margin-right: 8px; }
+
+.footCol p:hover {
+   color: var(--blue);
+   transform: scale(1.02);
+   cursor: pointer;
+}
+
+.carTag {
+   color: var(--white);
+   background-color: var(--blue);
+   font-size: 12px;
+   padding: 4px;
+   margin-right: 25px;
+   border-radius: 5px;
+   height: 14px;
+   display: flex;
+   align-items: center;
+}
+
+.carTag h4 { font-weight: 400; }
+
+.footHr { 
+   opacity: 50%;
+   color: var(--grey);
+}
+
+.footBottom {
+   margin-top: 20px;
+   margin-bottom: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.botFootleft ul {
+   display: flex;
+   padding-left: 0;
+   justify-content: space-between;
+   width: 310px;
+}
+
+.botFootright {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 400px;
+}
+
+.footSocial {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid transparent;
+   border-radius: 5px;
+   background-color: #dbe2e8;
+   height: 30px;
+   width: 30px;
+}
+
+.footSocial:hover {
+   background-color: var(--black);
+   transform: scale(1.02);
+}
+
+.usTag {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid transparent;
+   border-radius: 5px;
+   background-color: #dbe2e8;
+   padding: 3px;
+   height: 25px;
+   width: 140px;
+   font-size: 14px;
+}
+
+.usTag img {
+   height: 20px;
+   width: 20px;
+}
+
+.footAnchor { text-align: center; }
+
+.footAnchor i { margin-right: 3px; }
+
+.footAnchor h5 {
+   font-weight: 400;
+   margin: 0;
+   line-height: 24px;
+}

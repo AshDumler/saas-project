@@ -1,0 +1,448 @@
+/*   Ipads, Tablets - portrait   */
+@media screen and (max-width: 768px) {
+   [aria-controls="navbarDropdown"] {
+      display: block;
+   }
+
+   [aria-expanded="false"] ~ ul {
+      display: none;
+   }
+
+   [aria-expanded="true"] ~ ul {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+      width: 100%;
+      text-align: right;
+      box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+   }
+
+   [aria-expanded="true"] ~ ul li a {
+      margin-right: 20px;
+      color: #666;
+   }
+
+   .navbar { width: 740px; }
+   .navLogo img { width: 140px;}
+   .navbar .blueButton { display: none; }
+   .highlight { color: var(--grey); }
+   .navbar-toggler { right: 50px; }
+
+   .topDisplay {
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .empower {
+      width: 768px;
+      text-align: center;
+   }
+
+   .empower h2 { text-align: center; }
+
+   .brands {
+      justify-content: center;
+      width: 768px;
+      margin-left: -190px;
+      margin-bottom: 80px;
+   }
+
+   .benefits { margin-top: 200px; }
+
+   .benefitCards { 
+      display: grid; 
+      width: 740px;
+      margin: 30px auto;
+      grid-template-columns: repeat(2, 350px);
+      grid-gap: 30px;
+   }
+
+   .beneCard {
+      width: 250px;
+      margin: 0 auto;
+   }
+
+   .beneCard img {
+      height: 90px;
+      width: 90px;
+   }
+
+   .beneCard h3 { font-size: 26px; }
+
+   .beneCard p {
+      font-size: 22px;
+      font-weight: 400;
+   }
+
+   .premLabel { width: 200px; }
+
+   .frontSection {
+      flex-direction: column;
+      width: 768px;
+      height: max-content;
+   }
+   
+   .bannerLeft {
+      width: 768px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   
+   .bannerLeft .title { text-align: center; }
+
+   .bannerLeft .blueButton {
+      margin: 10px auto;
+      width: 170px;
+   }
+
+   .bannerRight { width: 768px; }
+
+   .bannerRight img {
+      margin: 10px auto;
+      height: 440px;
+      width: 760px;
+      float: right;
+   }
+
+   .whyDots { width: 650px; }
+
+   .whyMobile {
+      display: flex;
+      flex-direction: column;
+      width: 768px;
+   }
+
+   .whyTitles {
+      width: 700px;
+      margin: 0 auto;
+      font-size: 19px;
+   }
+
+   .line {
+      height: 3px;
+      width: 190px;
+   }
+
+   .vidBanner {
+      width: 765px;
+      height: 500px;
+   }
+
+   .hubLeft { justify-content: center; }
+   .hubSpot { flex-direction: column; }
+   .hubDots { margin-left: -250px; }
+
+   .hubRight { 
+      text-align: center; 
+      margin-right: 0;
+   }
+
+   .bestBrands {
+      width: 700px;
+      margin: 0 auto;
+      margin-bottom: 70px;
+   }
+
+   .bestBrands img { width: 110px; }
+   .pricing { flex-direction: column; }
+
+   .priceCard {
+      width: 700px;
+      padding: 10px;
+      margin: 20px auto;
+      text-align: center;
+   }
+
+   .priceCard .line {
+      height: 3px;
+      width: 310px;
+      margin: 0 auto;
+   }
+
+   .cardNumber { justify-content: center; }
+   .priceCard p { margin-bottom: 10px; }
+   .priceFeatures { margin: 20px auto; }
+   .priceLabel { width: 230px; }
+   .hireUs { flex-direction: column; }
+
+   .hireDes {
+      height: 300px;
+      align-items: center;
+   }
+
+   .hireDes h2 {
+      margin-top: 30px;
+      width: 300px;
+   }
+
+   .hireDes p { width: 300px; }
+
+   .hireLine {
+      border: 1px solid var(--white);
+      width: 300px;
+      margin: 30px 0;
+   }
+
+   .comment {
+      font-size: 16px;
+      width: 320px;
+   }
+
+   .headDesc {
+      float: right;
+      margin-top: -190px;
+   }
+
+   .profiles {
+      flex-direction: row;
+      margin-top: 14px;
+   }
+
+   .hireApp h3 { text-align: center; }
+
+   .hireApp {
+      width: 630px;
+      margin: 0 auto;
+   }
+
+   .appForm {
+      height: 500px;
+      justify-content: center;
+   }
+
+   .footLinks {
+      display: grid;
+      grid-template-areas: 
+      "frontFoot compFoot featFoot"
+      ". docFoot recFoot";
+      padding-left: 30px;
+      padding-right: 100px;
+   }
+
+   .footCol .premLabel { width: 160px; }
+
+   #frontFoot { grid-area: frontFoot; }
+   #compFoot { grid-area: compFoot; }
+   #featFoot { grid-area: featFoot; }
+   #docFoot { grid-area: docFoot; }
+   #recFoot { grid-area: recFoot; }
+
+   .footHr { width: 730px; }
+   .footBottom { 
+      padding: 0 20px; 
+      width: 700px;
+   }
+
+   .botFootleft ul {
+      font-size: 14px;
+      width: 270px;
+   }
+
+   .botFootright { width: 350px; }
+   .footAnchor { padding: 20px; }
+}
+
+@media screen and (max-width: 375px) {
+
+   .navbar { width: 350px; }
+   .navbar-toggler { right: 15px; }
+
+   .empower {
+      width: 375px;
+      text-align: center;
+   }
+
+   .brands {
+      justify-content: center;
+      width: 375px;
+      margin-bottom: 80px;
+   }
+
+   #google { left: 100px; }
+
+
+   #atlassian { left: 210px; }
+
+   #weave { 
+      left: 280px; 
+      top: 125px;
+   }
+
+   #asana { left: 350px; }
+
+   #paypal { 
+      left: 100px; 
+      top: 120px;
+   }
+
+   #google-a {
+      left: 200px;
+      top: 260px;
+   }
+
+   #calender {
+      left: 350px;
+      top: 280px;
+   }
+
+   .benefitCards { 
+      display: flex; 
+      flex-direction: column;
+      width: 375px;
+   }
+
+   .premLabel { margin-left: 0; }
+
+   .frontSection , 
+   .bannerLeft , 
+   .bannerRight {
+      width: 375px;
+      justify-content: center;
+   }
+
+   .bannerRight img {
+      margin-left: 10px;
+      height: 220px;
+      width: 350px;
+      float: none;
+   }
+
+   .whyDots {
+      flex-direction: column;
+      width: 80px;
+      float: left;
+      margin: 0;
+   }
+
+   .whyMobile {
+      display: flex;
+      flex-direction: row;
+      width: 370px;
+   }
+
+   .line {
+      height: 30px;
+      width: 3px;
+   }
+
+   .whyTitles { 
+      flex-direction: column; 
+      margin-top: 20px;
+      margin-left: 10px;
+      height: 290px;
+      max-width: 200px;
+   }
+
+   .vidBanner {
+      width: 370px;
+      height: 270px;
+      margin: 50px auto;
+   }
+
+   .hubDots {
+      height: 250px;
+      width: 190px;
+      margin-top: 145px;
+   }
+
+   .hubPhoto {
+      width: 270px;
+      height: 350px;
+      margin-left: 10px;
+   }
+
+   .bestBrands { 
+      flex-direction: column; 
+      width: 330px;
+   }
+
+   .bestBrands img { margin: 0 auto; }
+   .priceCard { width: 320px; }
+
+   .priceCard p {
+      text-align: start;
+      margin-left: 20px;
+   }
+
+   .priceFeatures {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .hireUs { flex-direction: column; }
+
+   .hireDes {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 400px;
+   }
+
+   .hireLine {
+      border: 1px solid var(--white);
+      width: 300px;
+      margin: 30px 0;
+   }
+
+   .comment {
+      font-size: 16px;
+      width: 320px;
+   }
+
+   .headDesc {
+      float: none;
+      margin: auto;
+      margin-bottom: 150px;
+   }
+
+   .profiles { margin: 10px auto;}
+
+   .hireApp {
+      width: 300px;
+      margin: 0 auto;
+   }
+
+   .appForm {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .pick { width: 300px; }
+   #tellUs { width: 280px; }
+   .subLab label { width: 260px; }
+
+   .appBut { 
+      width: 250px;
+      margin: 0 auto
+   }
+
+   .footLinks {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      text-align: center;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+   }
+
+   .footLabel { margin-left: 80px; }
+
+   .footBottom { 
+      flex-direction: column; 
+      justify-content: center;
+   }
+
+   .botFootleft ul {
+      text-align: center;
+      width: 250px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+   }
+
+   .botFootright { width: 340px; }
+}
