@@ -30,9 +30,6 @@
 }
 
 .navbar-toggler {
-   position: absolute;
-   right: 20px;
-   top: 30px;
    outline: none;
    background-color: transparent;
    border: 1px solid transparent;
@@ -40,7 +37,7 @@
 
 .navbar-toggler span {
    color: var(--grey);
-   font-size: 22px;
+   font-size: 24px;
    cursor: pointer;
 }
 
@@ -53,17 +50,19 @@
 .navRight {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 .navLinks {
    display: flex;
    margin-right: 35px;
    justify-content: space-between;
-   width: 360px;
+   align-items: center;
+   width: 540px;
    font-size: 18px;
 }
 
-.highlight { color: var(--blue); }
+.navLinks a:hover { color: var(--blue); }
 
 .topDisplay { 
    display: flex;
@@ -289,7 +288,7 @@
 
 .line {
    height: 3px;
-   width: 310px;
+   width: 290px;
    background-color: #f2f5f7;
    margin: 0 5px;
 }
@@ -335,6 +334,7 @@
 
 .hubSpot { 
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
    margin-bottom: 100px;
 }
@@ -428,7 +428,7 @@
    margin-bottom: 30px;
 }
 
-.priceCard .blueButton h3 { font-size: 14px; }
+.priceCard .blueButton span { font-size: 14px; }
 .priceCard .blueButton i { margin-left: 8px; }
 
 .priceCard h6 {
@@ -553,6 +553,10 @@
 
 .pick {
    width: 188px;
+   color: var(--black);
+}
+
+#budget {
    color: var(--black);
 }
 
@@ -681,22 +685,20 @@
    transform: scale(1.02);
 }
 
-.usTag {
+#usTag {
    display: flex;
-   justify-content: space-between;
-   align-items: center;
    border: 1px solid transparent;
    border-radius: 5px;
    background-color: #dbe2e8;
    padding: 3px;
-   height: 25px;
-   width: 140px;
+   height: 32px;
+   width: 130px;
    font-size: 14px;
 }
 
-.usTag img {
-   height: 20px;
-   width: 20px;
+.flagImg img {
+   height: 8px;
+   width: 8px;
 }
 
 .footAnchor { text-align: center; }

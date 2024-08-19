@@ -64,6 +64,11 @@ a {
    color: var(--white);
 }
 
+.blueButton span {
+   font-size: 16px;
+   font-weight: 600;
+}
+
 .blueButton:hover {
    cursor: pointer;
    background-color: var(--dark-blue);
@@ -79,4 +84,3 @@ a {
    border-radius: 50px;
    color: var(--white);
 }
-
